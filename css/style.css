@@ -9936,11 +9936,11 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 	display: -webkit-flex;
 	height: 0;
 	justify-content: space-between;
-	left: 10px;
+	left: 25%;
 	moz-box-pack: justify;
 	ms-flex-pack: justify;
 	position: absolute;
-	right: 10px;
+	right: 25%;
 	top: 50%;
 	webkit-box-pack: justify;
 	webkit-justify-content: space-between;
