@@ -6972,7 +6972,7 @@ svg:not(:root)
 {
 	.section
 	{
-		padding: 65px 0 60px;
+		padding: 60px 0 60px;
 	}
 	.section+.banner-form-section,.section+.info-section
 	{
@@ -7007,9 +7007,12 @@ svg:not(:root)
 {
 	.section-title
 	{
-		font-size: 2.5rem;
+		font-family: "yesevaone-regular";
+		font-size: 40px;
+		line-height: 50px;
+		/* font-size: 2.5rem;
 		font-size: 250%;
-		line-height: 1.25;
+		line-height: 1.25; */
 	}
 }
 .section-text
@@ -7081,6 +7084,7 @@ svg:not(:root)
 {
 	padding-left: 15px;
 	position: relative;
+	line-height: 30px;
 }
 .content-block ul li:before
 {
@@ -7091,7 +7095,7 @@ svg:not(:root)
 	left: 0;
 	moz-border-radius: 50%;
 	position: absolute;
-	top: 6px;
+	top: 13px;
 	webkit-border-radius: 50%;
 	width: 5px;
 }
@@ -8455,6 +8459,9 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 	webkit-background-size: cover;
 	webkit-box-shadow: 0px 2px 60px rgba(59, 51, 38, 0.15);
 }
+
+
+
 @media (min-width:960px)
 {
 	.banner-block-img
@@ -8763,7 +8770,7 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 {
 	.banner-slider-label
 	{
-		padding: 30px 30px;
+		padding: 24px 15px 24px 26px;
 		right: 80px;
 		top: 140px;
 	}
@@ -8883,6 +8890,11 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 	.banner-slider-top-content .subtitle
 	{
 		margin-top: 33px;
+	}
+	.banner-slider-top-content .subtitle span
+	{
+		font-size: 24px;
+		display: block;
 	}
 }
 @media (min-width:1440px)
@@ -9357,12 +9369,13 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 }
 .info-section
 {
-	background-image: url(../images/pattern.jpg);
+	/* background-image: url(../images/pattern.jpg); */
 	background-position: 0 0;
 	background-repeat: repeat;
 	padding-bottom: 60px;
 	padding-top: 60px;
 	position: relative;
+	background-color: #F9F6F1;
 }
 .info-section+.section
 {
@@ -9388,7 +9401,6 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 	.info-section+.section
 	{
         padding-top: 100px;
-        padding-bottom: 60px;
 	}
 }
 @media (-o-min-device-pixel-ratio:2/1),(-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2),(min-resolution:192dpi)
@@ -9731,7 +9743,7 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 {
 	font-family: "yesevaone-regular", sans-serif;
 	font-size: 1.5rem;
-	font-size: 150%;
+	/* font-size: 150%; */
 	font-weight: normal;
 	line-height: 1.25;
 	position: relative;
@@ -10390,3 +10402,98 @@ div.wpcf7-mail-sent-ok
 	}
 }
 
+/* edits */
+.banner-slider-section {
+	position: relative;
+}
+.banner-slider-title {
+	color: #fff;
+}
+.banner-slider-bg {
+	background-color: #F9F6F1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner-slider-bg_1 {
+	bottom: 269px;
+}
+.banner-slider-bg_2 {
+	bottom: 265px;
+}
+.section-slider-subtitle {
+	color: #fff !important;
+}
+.section-slider-subtitle span {
+	color: #E5AF6E;
+}
+.banner-slider-botton-content .content-block p:nth-child(2){
+	font-weight: 700;
+}
+
+/* taps */
+.tap-bar {
+	background-color: #0E314F;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 24;
+}
+.tap-bar__row {
+	display: flex;
+	justify-content: center;
+}
+.tap-bar__item {
+	flex: 0 1 130px;
+	border-left: 1px solid rgba(255,255,255,.1);
+	padding: 12px 0 18px;
+}
+.tap-bar__item:last-child {
+	border-right: 1px solid rgba(255,255,255,.1);
+}
+.tap-bar__img {
+	margin-bottom: 10px;
+}
+.tap-bar__text {
+	max-width: 108px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+}
+@media (max-width: 767px) {
+	.tap-bar {
+		display: block;
+	}
+}
+
+/* clients */
+.clients__row {
+	display: flex;
+}
+.clients__column {
+	min-height: 410px;
+	position: relative;
+	display: block;
+}
+.clients__img {
+	position: absolute;
+	left: 0;
+}
+.clients__img_1{
+	bottom: 41px;
+}
+.clients__img_2{
+	bottom: 0;
+}
+.clients__img img {
+	display: block;
+	max-width: 100%;
+}
