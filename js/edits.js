@@ -1,9 +1,24 @@
 $('.clients__row').slick({
+        centerMode: true,
+        centerPadding: '5px',
+        wariableWidth: true,
+        slidesToShow: 5,
+        dots: false,
+        arrow: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false,
     responsive: [
         {
-          breakpoint: 1000000,
-          settings: 'unslick'
-        },
+            breakpoint: 769,
+            settings: {
+              centerMode: true,
+              centerPadding: '60px',
+              wariableWidth: true,
+              slidesToShow: 3,
+            }
+          },
         {
           breakpoint: 767,
           settings: {
