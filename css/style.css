@@ -8796,8 +8796,7 @@ div.wpcf7-aborted,div.wpcf7-mail-sent-ng
 {
 	.banner-slider-label
 	{
-		left: 100%;
-		right: auto;
+		right: -150px;
 	}
 }
 @media (min-width:375px)
@@ -10475,6 +10474,79 @@ div.wpcf7-mail-sent-ok
 }
 
 /* clients */
+.clients {
+	position: relative;
+	padding: 200px 0 105px;
+	background-color: #F9F6F1;
+}
+.clients-box {
+	padding: 0 15px;
+}
+.clients-container
+{
+	position: relative;
+	max-width: 930px;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 690px;
+}
+.clients-container:before
+{
+	background: linear-gradient(to left, #DDBB80 0%, #B98649 100%);
+	background: -moz-linear-gradient(right, #DDBB80 0%, #B98649 100%);
+	background: -o-linear-gradient(right, #DDBB80 0%, #B98649 100%);
+	background: -webkit-gradient(linear, right top, left top, from(#DDBB80), to(#B98649));
+	background: -webkit-linear-gradient(right, #DDBB80 0%, #B98649 100%);
+	bottom: 0;
+	content: '';
+	left: 0;
+	opacity: .8;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.clients-container:after
+{
+	background-color: #F9F6F1;
+	bottom: 10px;
+	content: '';
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.clients-container__text
+{
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+    left: 50%;
+    top: -60px;
+	transform: translate(-50%,0);
+	max-width: 677px;
+	width: 100%;
+}
+.clients-container__text .title
+{
+	font-family: "yesevaone-regular", sans-serif;
+	font-size: 64px;
+	line-height: 70px;
+	margin-bottom: 0;
+}
+.clients-container__text .title p
+{
+	background-color: #F9F6F1;
+	display: inline-block;
+	margin: 0;
+}
+
+
+
+.clients__inner {
+	position: absolute;
+	bottom: 20px;
+}
 .clients__row {
 	display: flex;
 }
@@ -10482,6 +10554,7 @@ div.wpcf7-mail-sent-ok
 	min-height: 410px;
 	position: relative;
 	display: block;
+	flex: 0 1 410px;
 }
 .clients__img {
 	position: absolute;
